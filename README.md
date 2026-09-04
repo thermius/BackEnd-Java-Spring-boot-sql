@@ -1,4 +1,4 @@
-# ☕ BackEnd-Java-Spring-bootsql
+## ☕ BackEnd Java Springboot PostgreSQL
 Backend desenvolvido em Java + Spring Boot + PostgreSQL para cadastro e consulta de clientes, com armazenamento protegido de dados sensíveis.
 
 O projeto foi desenvolvido com foco no estudo de backend, persistência de dados, APIs REST e criptografia aplicada ao armazenamento.
@@ -12,7 +12,7 @@ Funcionalidades
 • Integração com PostgreSQL através do Spring Data JPA
 • Conversão dos dados armazenados para objetos Java durante a consulta
 
-# 🌐 API
+## 🌐 API
 ### Cadastro
 POST /cadastrar
 
@@ -101,7 +101,7 @@ Data Cadastro Hex:   32 30 32 36 2d 30 39 2d 30 34 54 31 34 3a 32 34 3a 32 34 2e
 
 
 
-# 🔒 Proteção dos dados
+## 🔒 Proteção dos dados
 AES-GCM
 
 Os dados que precisam ser recuperados posteriormente são armazenados utilizando AES-GCM.
@@ -112,7 +112,7 @@ Algebricamente temos:
 
 **AES(K, CPF, IV₁) ≠ AES(K, CPF, IV₂)** 
 
-# 🔒 HMAC-SHA256
+## 🔒 HMAC-SHA256
 
 Para permitir consultas determinísticas, o CPF também possui uma representação através de HMAC-SHA256.
 
@@ -133,7 +133,7 @@ A aplicação utiliza variáveis de ambiente para carregar as chaves:
   ```
 
 
-# 🖥️ Tecnologias
+## 🖥️ Tecnologias
 Java
 Spring Boot
 Spring Data JPA
@@ -148,7 +148,7 @@ HMAC-SHA256
 Git / GitHub
 
 
-# 🗄️ Banco de dados
+## 🗄️ Banco de dados
 
 O banco de dados tem a seguinte estrutura:
 
@@ -204,7 +204,7 @@ bbeba4de73a655c43c93e8fa333 | \x27bccfd44a93ce3ebef8168736ed6d8e79edade25c37c145
 ```
 
 
-# 💻 Teste da API via CURL
+## 💻 Teste da API via CURL
 
 Os testes demonstram o funcionamento da API, incluindo o cadastro de clientes e a consulta dos dados armazenados e posteriormente descriptografados pela aplicação.
 
@@ -266,12 +266,12 @@ Cliente cadastrado com sucesso! ID: 406
 thermius@arch:
 
 ```
-# 👨‍💻 Autor
+## 👨‍💻 Autor
 **Thermius**
 Projeto desenvolvido para fins educacionais e de estudo em desenvolvimento backend, segurança de aplicações e criptografia.
 
 
-# 📄 Licença
+## 📄 Licença
 
 Todos os direitos reservados.
 
