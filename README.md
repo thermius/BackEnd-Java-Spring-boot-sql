@@ -3,14 +3,17 @@ Backend desenvolvido em Java + Spring Boot + PostgreSQL para cadastro e consulta
 
 O projeto foi desenvolvido com foco no estudo de backend, persistência de dados, APIs REST e criptografia aplicada ao armazenamento.
 
-Funcionalidades
-• Cadastro de clientes através de API REST
-• Consulta de clientes através do CPF
-• Persistência dos dados utilizando PostgreSQL
-• Criptografia de dados sensíveis com AES-GCM
-• Geração de HMAC-SHA256 para identificação determinística de documentos
-• Integração com PostgreSQL através do Spring Data JPA
-• Conversão dos dados armazenados para objetos Java durante a consulta
+**Funcionalidades**
+
+* Cadastro de clientes através de API REST
+* Consulta de clientes através do CPF
+* Persistência dos dados utilizando PostgreSQL
+* Criptografia de dados sensíveis com AES-GCM
+* Geração de HMAC-SHA256 para identificação determinística de documentos
+* Integração com PostgreSQL através do Spring Data JPA
+* Conversão dos dados armazenados para objetos Java durante a consulta
+
+## 🌐 API
 
 ## 🌐 API
 ### Cadastro
