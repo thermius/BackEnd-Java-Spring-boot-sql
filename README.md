@@ -15,44 +15,55 @@ O projeto foi desenvolvido com foco no estudo de backend, persistência de dados
 
 ## 🌐 API
 ### Cadastro
+
+```http
 POST /cadastrar
+```
 
 Recebe os dados do cliente através de JSON e realiza o processamento antes do armazenamento.
 
-Fluxo simplificado:
+**Fluxo simplificado:**
 
+```text
 JSON
- ↓
+  ↓
 Controller
- ↓
+  ↓
 Processamento dos dados
- ↓
+  ↓
 🔒 AES-GCM / HMAC-SHA256
- ↓
+  ↓
 Spring Data JPA
- ↓
+  ↓
 PostgreSQL
+```
 
 ### Consulta
+
+```http
 GET /consultar/{cpf}
+```
 
 O CPF informado é utilizado para gerar o HMAC correspondente. O resultado é utilizado para localizar o registro no banco sem a necessidade de descriptografar todos os registros.
 
-Fluxo:
+**Fluxo:**
 
+```text
 CPF
- ↓
+  ↓
 HMAC-SHA256
- ↓
+  ↓
 Consulta PostgreSQL
- ↓
+  ↓
 Registro encontrado
- ↓
+  ↓
 🔓 Descriptografia AES-GCM
- ↓
+  ↓
 Objeto Java
- ↓
+  ↓
 JSON
+```
+
 
 ⚠️ **Nota:** Para fins exclusivamente demonstrativos, o projeto exibe alguns dados sensíveis durante a execução para permitir a visualização e validação do funcionamento da API. Essa prática é utilizada apenas no contexto educacional deste projeto e seria inadequada em um ambiente de produção. Todos os dados são fictícios e gerados com IA:
 
