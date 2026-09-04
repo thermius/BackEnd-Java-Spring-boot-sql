@@ -113,7 +113,7 @@ Data Cadastro Hex:   32 30 32 36 2d 30 39 2d 30 34 54 31 34 3a 32 34 3a 32 34 2e
 
 
 
-## 🔒 Proteção dos dados
+### 🔒 Proteção dos dados
 AES-GCM
 
 Os dados que precisam ser recuperados posteriormente são armazenados utilizando AES-GCM.
@@ -124,7 +124,7 @@ Algebricamente temos:
 
 **AES(K, CPF, IV₁) ≠ AES(K, CPF, IV₂)** 
 
-## 🔒 HMAC-SHA256
+### 🔒 HMAC-SHA256
 
 Para permitir consultas determinísticas, o CPF também possui uma representação através de HMAC-SHA256.
 
@@ -140,24 +140,25 @@ A aplicação é responsável pelo processamento criptográfico. O PostgreSQL re
 🔐 **Nota:** As chaves criptográficas não são armazenadas no código-fonte nem no banco de dados.
 A aplicação utiliza variáveis de ambiente para carregar as chaves:
   ```bash
-    AES_SECRET_KEY
-  HMAC_SECRET_KEY
+      AES_SECRET_KEY
+      HMAC_SECRET_KEY
   ```
 
 
 ## 🖥️ Tecnologias
-Java
-Spring Boot
-Spring Data JPA
-Hibernate
-PostgreSQL
-SQL
-REST API
-HTTP
-JSON
-AES-GCM
-HMAC-SHA256
-Git / GitHub
+
+* Java
+* Spring Boot
+* Spring Data JPA
+* Hibernate
+* PostgreSQL
+* SQL
+* REST API
+* HTTP
+* JSON
+* AES-GCM
+* HMAC-SHA256
+* Git / GitHub
 
 
 ## 🗄️ Banco de dados
@@ -259,6 +260,7 @@ Content-Length: 39
 Date: Fri, 04 Sep 2026 17:32:24 GMT
 
 Cliente cadastrado com sucesso! ID: 405
+thermius@arch:
 
 thermius@arch: curl -i -X POST http://localhost:8080/cadastrar \        
   -H "Content-Type: application/json" \
