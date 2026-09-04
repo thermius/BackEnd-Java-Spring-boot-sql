@@ -14,8 +14,6 @@ O projeto foi desenvolvido com foco no estudo de backend, persistência de dados
 * Conversão dos dados armazenados para objetos Java durante a consulta
 
 ## 🌐 API
-
-## 🌐 API
 ### Cadastro
 POST /cadastrar
 
